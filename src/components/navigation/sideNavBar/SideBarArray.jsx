@@ -8,22 +8,22 @@ import { RiAdminFill } from 'react-icons/ri';
  export const Paths = [
         {
             to: '/settings',
-            icons : <AiFillSetting/>,
+            icons : <AiFillSetting size={40} />,
             label:'SETTINGS'
         },
         {
             to: '/home',
-            icons : <FaHome/>,
+            icons : <FaHome size={40}/>,
             label:'HOME'
         },
         {
             to: '/user',
-            icons : <FaUser/>,
+            icons : <FaUser size={40}/>,
             label:'USERS'
         },
         {
             to: '/admin',
-            icons : <RiAdminFill/>,
+            icons : <RiAdminFill size={40}/>,
             label:'ADMIN'
         }
 
