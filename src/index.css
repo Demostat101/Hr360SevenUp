@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.trans{
+    transition: width 250ms;
+}
+
+.transit{
+    transition: width 250ms;
+}
+
+a.active{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+    color: rgb(95, 79, 79);
+}
+
+a.active #icons{
+  
+    color: black;
+}
+
+a.active #label{
+    color:black;
+}
+a.active {
+    position: relative;
+}
+
+ul a.active li::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px white;
+    pointer-events: none;
+
+}
+ul a.active li::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px white;
+    pointer-events: none;
+
+}

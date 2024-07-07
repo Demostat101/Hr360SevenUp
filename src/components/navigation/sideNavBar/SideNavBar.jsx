@@ -1,18 +1,18 @@
 import { NavLink } from "react-router-dom"
 import { Paths } from "./SideBarArray"
-import { useState } from "react"
 
 
 
 
-const SideNavBar = () => {
-  const [open, setOpen] = useState(false)
+
+const SideNavBar = ({open}) => {
+  
   return (
-    <ul className={!open ? "w-[300px] border-solid border-2 pt-8" : "w-[80px] border-solid border-2 pt-8"}>
+    <ul className={open ? "w-[300px] pt-[70px] transition ease-in-out trans bg-purple-500 pl-4" : "w-[107px] pt-[70px] transit bg-purple-500 pl-2 "}>
         {
             Paths.map((path,index)=>{
-                return <NavLink className="flex flex-col gap-2 pl-12" to={path.to} key={index }>
-                <li className="w-full border-solid border-red-500 border-2 mb-2 flex h-[50px] place-items-center gap-6 text-md font-bold">{path.icons}{path.label}</li>
+                return <NavLink className="flex flex-col gap-2 pl-4 place-items-center" to={path.to} key={index }>
+                <li className="w-full mb-2 flex h-[40px] place-items-center gap-8 text-md font-bold pl-3 pt-[5px] justify-left"><span id="icons" className={path.label === "SETTINGS" ? "text-white" : "text-black"}>{path.icons}</span> <span id="label" className={!open ? "pl-[10px] overflow-hidden" : "text-white"}>{path.label}</span></li>
               </NavLink>
             })
         }
