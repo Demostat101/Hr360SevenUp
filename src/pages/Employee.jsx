@@ -1,12 +1,12 @@
 import React from 'react'
 
 
-const User = () => {
+const Employee = () => {
   return (
     <div className='text-red-800'>
-      USERS
+      EMPLOYEE
     </div>
   )
 }
 
-export default User
+export default Employee

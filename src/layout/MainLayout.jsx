@@ -2,10 +2,10 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import SideNavBar from '../components/navigation/sideNavBar/SideNavBar'
 import TopNavBar from '../components/navigation/topNavBar/TopNavBar'
-import { useState } from "react"
+import useLocalStorage from "use-local-storage";
 
 const MainLayout = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useLocalStorage(false)
 
   const handleOpenBar = ()=> {
     const close = !open;

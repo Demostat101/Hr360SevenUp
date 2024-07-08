@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
-import Login from "./pages/Login";
-import Home from "./pages/Home";
-import Settings from "./pages/Settings";
-import User from "./pages/User";
-import Admin from "./pages/Admin";
 import Error from "./pages/Error";
+import DashBoard from "./pages/DashBoard";
+import Employee from "./pages/Employee";
+import AddEmployee from "./pages/AddEmployee";
+import Analytics from "./pages/Analytics";
+import Announcement from "./pages/Announcement";
 
 
 
@@ -17,27 +17,25 @@ const Routers = createBrowserRouter([
         children: [
             {
                 index:true,
-                element:<Login/>
+                element:<DashBoard/>
             },
 
             {
-                path:'/home',
-                element:<Home/>
+                path:'/employee',
+                element:<Employee/>
             },
 
             {
-                path:'/settings',
-                element: <Settings/>
+                path:'/add-employee',
+                element:<AddEmployee/>
             },
-
             {
-                path:'/user',
-                element:<User/>
+                path:'/analytics',
+                element:<Analytics/>
             },
-
             {
-                path:'/admin',
-                element:<Admin/>
+                path:'/announcement',
+                element:<Announcement/>
             },
 
             {

@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+*{
+    font-family: "Poppins";
+}
+
 .trans{
     transition: width 250ms;
 }
@@ -12,47 +16,29 @@
 }
 
 a.active{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     background-color: white;
     color: rgb(95, 79, 79);
+    border-right: none;
 }
 
-a.active #icons{
-  
-    color: black;
-}
 
 a.active #label{
-    color:black;
+    color:#176B87;
 }
 a.active {
     position: relative;
 }
 
-ul a.active li::before{
-    content: "";
-    position: absolute;
-    right: 0;
-    top: -50px;
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border-radius: 50%;
-    box-shadow: 35px 35px 0 10px white;
-    pointer-events: none;
-
+a.active .icon {
+    color: #176B87;
 }
-ul a.active li::after{
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -50px;
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border-radius: 50%;
-    box-shadow: 35px -35px 0 10px white;
-    pointer-events: none;
 
+a.active .icons{
+    color: #176B87;
 }
+
+
+
+
