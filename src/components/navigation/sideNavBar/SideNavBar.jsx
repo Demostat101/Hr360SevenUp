@@ -7,19 +7,19 @@ const SideNavBar = ({ open }) => {
     <nav
       className={
         open
-          ? "w-[250px] h-[1024px] transition ease-in-out trans bg-[#176B87] text-[#FFFFFF] pt-[100px] flex flex-col justify-between pb-[30px]"
-          : "w-[130px] h-[1024px] transit bg-[#176B87] place-items-center text-white pt-[100px] flex flex-col justify-between pb-[30px]"
+          ? "w-[250px] md:max-w-[250px] h-[1024px] md:max-h-[100vh] transition ease-in-out trans bg-[#176B87] text-[#FFFFFF] 2xl:pt-[120px] md:pt-[60px] flex flex-col justify-between 2xl:pb-[30px] md:pb-[20px]"
+          : "w-[130px] md:max-w-[130px] h-[1024px] md:max-h-[100vh] transit bg-[#176B87] place-items-center text-white 2xl:pt-[120px] md:pt-[60px] flex flex-col justify-between 2xl:pb-[30px] md:pb-[20px]"
       }
     >
       <ul
         className={
           open
-            ? "w-[250px] transition ease-in-out trans bg-[#176B87] pl-8"
-            : "w-[130px] transit bg-[#176B87] flex flex-col place-items-center "
+            ? "w-[250px] md:max-w-[250px] transition ease-in-out trans bg-[#176B87] pl-8 md:pl-4"
+            : "w-[130px] md:max-w-[130px] transit bg-[#176B87] flex flex-col place-items-center "
         }
       >
         {open ? (
-          <h1 className=" relative w-[149px] h-[60px] text-[40px] font-[600] mb-[40px] pl-2">
+          <h1 className=" relative w-[149px] md:max-w-[149px] h-[60px] md:max-h-[60px] text-[40px] md:text-[30px] font-[600] mb-[40px] md:mb-[30px] pl-2">
             HR 360{" "}
             <sup className=" absolute top-2 right-[-1] text-[20px]">
               <div className="w-[10px] h-[10px] rounded-full bg-white"></div>
@@ -37,7 +37,7 @@ const SideNavBar = ({ open }) => {
                   ? "pl-0"
                   : !open
                   ? "pl-0 m-2"
-                  : "flex flex-col gap-2 mb-6 pl-4 place-items-center"
+                  : "flex flex-col gap-2 mb-6 md:mb-auto pl-4  md:pl-auto place-items-center"
               }
               to={path.to}
               key={index}
@@ -45,9 +45,9 @@ const SideNavBar = ({ open }) => {
               <li
                 className={
                   path.label === "Dashboard" && !open
-                    ? "w-[80px] h-[80px] bg-[#F6F7FA] flex flex-col justify-center place-items-center rounded-md"
+                    ? "w-[80px]  h-[80px] bg-[#F6F7FA] flex flex-col justify-center place-items-center rounded-md"
                     : !open
-                    ? "w-[80px] h-[80px] flex flex-col justify-center place-items-center"
+                    ? "w-[80px]  h-[80px] flex flex-col justify-center place-items-center"
                     : "w-[221px] mb-2 flex h-[50px] place-items-center gap-3 text-md font-bold pl-3 pt-[5px] justify-left"
                 }
               >

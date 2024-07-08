@@ -12,7 +12,7 @@ const MainLayout = () => {
     setOpen(close)
   }
   return (
-    <div className='flex w-full border-solid border-2 border-red-600 h-screen'>
+    <div className='flex w-full min-h-screen'>
       <SideNavBar open={open}/>
       <div className='w-full'>
       <TopNavBar open={open}  handleOpenBar={ handleOpenBar}/>
