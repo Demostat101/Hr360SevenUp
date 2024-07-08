@@ -45,7 +45,7 @@ const SideNavBar = ({ open }) => {
               <li
                 className={
                   path.label === "Dashboard" && !open
-                    ? "w-[80px]  h-[80px] bg-[#F6F7FA] flex flex-col justify-center place-items-center rounded-md"
+                    ? "w-[80px] h-[80px] flex flex-col justify-center place-items-center rounded-md"
                     : !open
                     ? "w-[80px]  h-[80px] flex flex-col justify-center place-items-center"
                     : "w-[221px] mb-2 flex h-[50px] place-items-center gap-3 text-md font-bold pl-3 pt-[5px] justify-left"
@@ -54,10 +54,10 @@ const SideNavBar = ({ open }) => {
                 <span
                   className={
                     path.label === "Dashboard" && !open
-                      ? "text-[#176B87]"
+                      ? " text-white icon "
                       : open
                       ? "text-[#FFF] icon"
-                      : "text-[#FFFFFF] icons"
+                      : "text-[#FFFFFF] icon"
                   }
                 >
                   {!open ? path.icons[0] : path.icons[1]}

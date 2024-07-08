@@ -16,11 +16,14 @@
 }
 
 a.active{
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
     background-color: white;
     color: rgb(95, 79, 79);
     border-right: none;
+}
+a.active .icons{
+    border-radius: 7px;
 }
 
 
@@ -35,9 +38,7 @@ a.active .icon {
     color: #176B87;
 }
 
-a.active .icons{
-    color: #176B87;
-}
+
 
 
 
