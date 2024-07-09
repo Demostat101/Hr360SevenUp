@@ -3,11 +3,12 @@ import { IoIosPeople } from "react-icons/io";
 import { LuLayoutDashboard } from "react-icons/lu";
 import { BsPersonAdd } from "react-icons/bs";
 import { TbReportAnalytics } from "react-icons/tb";
+import { BsColumnsGap } from "react-icons/bs";
 
 export const Paths = [
   {
     to: "/",
-    icons: [<LuLayoutDashboard size={40} />, <LuLayoutDashboard size={23} />],
+    icons: [< BsColumnsGap size={40} />, < BsColumnsGap size={23} />],
 
     label: "Dashboard",
   },

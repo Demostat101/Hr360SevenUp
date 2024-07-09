@@ -21,7 +21,7 @@ const SideNavBar = ({ open }) => {
         {open ? (
           <h1 className=" relative w-[149px] md:max-w-[149px] h-[60px] md:max-h-[60px] text-[40px] md:text-[30px] font-[600] mb-[40px] md:mb-[30px] pl-2">
             HR 360{" "}
-            <sup className=" absolute top-2 right-[-1] text-[20px]">
+            <sup className=" absolute top-1 right-[-1] text-[20px]">
               <div className="w-[10px] h-[10px] rounded-full bg-white"></div>
             </sup>
           </h1>
@@ -43,10 +43,8 @@ const SideNavBar = ({ open }) => {
               key={index}
             >
               <li
-                className={
-                  path.label === "Dashboard" && !open
-                    ? "w-[80px] h-[80px] flex flex-col justify-center place-items-center rounded-md"
-                    : !open
+                className={ 
+                    !open
                     ? "w-[80px]  h-[80px] flex flex-col justify-center place-items-center"
                     : "w-[221px] mb-2 flex h-[50px] place-items-center gap-3 text-md font-bold pl-3 pt-[5px] justify-left"
                 }
