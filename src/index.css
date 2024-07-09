@@ -8,11 +8,11 @@
 }
 
 .trans{
-    transition: width 250ms;
+    transition: width 250ms ease;
 }
 
 .transit{
-    transition: width 250ms;
+    transition: width 250ms ease;
 }
 
 a.active{

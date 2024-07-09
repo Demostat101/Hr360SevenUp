@@ -2,9 +2,12 @@ import React, { useState } from 'react'
 import Pic from '/src/assets/woman.jfif'
 import { FaBars } from 'react-icons/fa'
 import SearchInput from '../../../pages/SearchInput'
+import { Context } from '../../../DashBoardContext'
 
-const TopNavBar = ({open,  handleOpenBar}) => {
-  const [isLogin, setIsLogin] = useState(true)
+const TopNavBar = () => {
+  const [isLogin, setIsLogin] = useState(true);
+  const {open,  handleOpenBar} = Context();
+
   return (
     <>
       <header className={ !open ? "2xl:w-[1312px] max-w-[1312px] h-[86px] flex flex-col justify-center place-items-center" :"2xl:w-[1190px] max-w-[1190px] h-[78px] flex flex-col justify-center place-items-center"  } >
