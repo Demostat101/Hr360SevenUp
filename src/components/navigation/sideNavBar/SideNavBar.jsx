@@ -10,8 +10,8 @@ const SideNavBar = () => {
     <nav
       className={
         open
-          ? "w-[250px] md:max-w-[250px] h-[1024px] md:max-h-[100vh] transition ease-in-out trans bg-[#176B87] text-[#FFFFFF] 2xl:pt-[120px] md:pt-[60px] flex flex-col justify-between 2xl:pb-[30px] md:pb-[20px]"
-          : "w-[130px] md:max-w-[130px] h-[1024px] md:max-h-[100vh] transit bg-[#176B87] place-items-center text-white 2xl:pt-[120px] md:pt-[60px] flex flex-col justify-between 2xl:pb-[30px] md:pb-[20px]"
+          ? "w-[250px] md:max-w-[250px] h-[1024px] md:max-h-[100vh] transition ease-in-out trans bg-[#176B87] text-[#FFFFFF] 2xl:pt-[100px] md:pt-[60px] flex flex-col justify-between 2xl:pb-[30px] md:pb-[20px]"
+          : "w-[130px] md:max-w-[130px] h-[1024px] md:max-h-[100vh] transit bg-[#176B87] place-items-center text-white 2xl:pt-[100px] md:pt-[60px] flex flex-col justify-between 2xl:pb-[30px] md:pb-[20px]"
       }
     >
       <ul
