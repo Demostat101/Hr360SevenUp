@@ -1,5 +1,6 @@
 import { Context } from "../../DashBoardContext"
-import Graph from "./Graph"
+import Graph1 from "./Graph1"
+import Graph2 from "./Graph2"
 
 
 const MiddleComponent = () => {
@@ -15,7 +16,7 @@ const MiddleComponent = () => {
             {/* graph top content */}
             <div className={open ? "2xl:w-[256px] 2xl:h-[24px] 2xl:text-[16px] 2xl:leading-[24px] font-[500] md:w-[20%] md:h-[100%] md:text-[12px] md:leading-[18px] md:text-nowrap" : "2xl:w-[282px] 2xl:h-[26px] 2xl:text-[17.62px] 2xl:leading-[26.43px] font-[500] md:w-[30%] md:h-[100%] md:text-nowrap md:text-[14px] md:leading-[20px]"} >Employee Availability Overview</div>
 
-            <div className={open ? "2xl:w-[288px] 2xl:h-[42px] 2xl:gap-[10px] md:w-[200px] md:h-[100%] md:gap-[5px]" : "2xl:w-[317.11px] 2xl:h-[45.82px] 2xl:gap-[11.01px] md:w-[250px] md:h-[100%] md:gap-[5px]"} >
+            <div className={open ? "2xl:w-[288px] 2xl:h-[42px] flex 2xl:gap-[10px] md:w-[200px] md:h-[100%] md:gap-[5px]" : "2xl:w-[317.11px] 2xl:h-[45.82px] flex 2xl:gap-[11.01px] md:w-[250px] md:h-[100%] md:gap-[5px]"} >
               {/* left drop down */}
               <div className={open ? "2xl:w-[108px] border-solid border-[1px] border-[#E3EFF3] 2xl:h-[42px] flex flex-col 2xl:gap-[10px] md:w-[80px] md:h-[100%] " : "2xl:w-[118.91px] 2xl:h-[45.82px] border-solid border-[1px] border-[#E3EFF3] flex flex-col 2xl:gap-[11.01px] md:w-[80px] md:h-[100%] "} >
                 {/* left drop down select */}
@@ -40,6 +41,12 @@ const MiddleComponent = () => {
 
             </div>
 
+          </div>
+
+          {/* graph page */}
+
+          <div className={open ? "2xl:w-[553.47px] 2xl:h-[138.09px] md:w-[450px] border-solid border-2 border-blue-600 md:h-[120px]" : "2xl:w-[609.41px] border-solid border-2 border-red-600 2xl:h-[152.05px] md:w-[450px] md:h-[120px]"} >
+            <Graph1/>
           </div>
 
         </div>

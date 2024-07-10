@@ -1,11 +1,11 @@
 
 import { BarChart, Bar,ResponsiveContainer, XAxis, YAxis, Tooltip, Legend } from "recharts";
 import { salesData } from "./GraphData";
-const halfsales = salesData.slice(0,6);
+const halfsales = salesData.slice(6,12);
 console.log(halfsales);
 
 
-const Graph = () => {
+const Graph2 = () => {
   return (
        <ResponsiveContainer width="100%" height="100%">
              <BarChart data={halfsales}>
@@ -20,4 +20,4 @@ const Graph = () => {
   )
 }
 
-export default Graph
+export default Graph2
