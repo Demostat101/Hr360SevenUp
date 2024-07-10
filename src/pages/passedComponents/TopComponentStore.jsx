@@ -1,7 +1,25 @@
-const {open} = Context();
+import { IoIosPeople } from "react-icons/io";
 
-const EmployeeStore = [
+export const EmployeeStore = [
     {
-        img: <IoIosPeople className={open ? "2xl:w-[23.3px] 2xl:h-[21.31px] md:w-[20px] bg-[#176B87] text-[#FFFFFF] md:h-[18px]" : "2xl:w-[35.19px] bg-[#176B87] text-[#FFFFFF] 2xl:h-[35.19px] md:w-[30px] md:h-[30px]"}/>
+        img: <IoIosPeople/>,
+        total:"69,560",
+        employee:"Total Employees",
+        update:"Last Updated Fri, 8 Mar 2024 at 2:30pm"
+
+    },
+    {
+        img: <IoIosPeople/>,
+        total:"27",
+        employee:"New Employees",
+        update:"Last Updated Fri, 8 Mar 2024 at 2:30pm"
+
+    },
+    {
+        img: <IoIosPeople/>,
+        total:"11",
+        employee:"Employees on leave",
+        update:"Last Updated Fri, 8 Mar 2024 at 2:30pm"
+
     }
 ]
