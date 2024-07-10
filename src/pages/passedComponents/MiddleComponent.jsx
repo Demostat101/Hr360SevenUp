@@ -17,14 +17,27 @@ const MiddleComponent = () => {
 
             <div className={open ? "2xl:w-[288px] 2xl:h-[42px] 2xl:gap-[10px] md:w-[200px] md:h-[100%] md:gap-[5px]" : "2xl:w-[317.11px] 2xl:h-[45.82px] 2xl:gap-[11.01px] md:w-[250px] md:h-[100%] md:gap-[5px]"} >
               {/* left drop down */}
-              <div className={open ? "2xl:w-[108px] 2xl:h-[42px] flex flex-col 2xl:gap-[10px] md:w-[100px] md:h-[100%] " : "2xl:w-[118.91px] 2xl:h-[45.82px] flex flex-col 2xl:gap-[11.01px] md:w-[100px] md:h-[100%] "} >
+              <div className={open ? "2xl:w-[108px] border-solid border-[1px] border-[#E3EFF3] 2xl:h-[42px] flex flex-col 2xl:gap-[10px] md:w-[80px] md:h-[100%] " : "2xl:w-[118.91px] 2xl:h-[45.82px] border-solid border-[1px] border-[#E3EFF3] flex flex-col 2xl:gap-[11.01px] md:w-[80px] md:h-[100%] "} >
                 {/* left drop down select */}
 
-                <select name="" id="">
+                <select className=" outline-none" name="" id="">
                   <option value="Sale">Sale</option>
                   <option value="Nosale">No Sales</option>
                 </select>
               </div>
+
+              {/* right drop down */}
+
+              <div className={open ? "2xl:w-[170px] 2xl:h-[42px] 2xl:gap-[10px] border-solid border-[1px] border-[#E3EFF3] md:w-[110px] md:h-[100%]" : "2xl:w-[187.18px] 2xl:h-[45.82px] 2xl:gap-[11.01px] border-solid border-[1.1px] border-[#E3EFF3] md:w-[110px] md:h-[100%]"} >
+                {/* right drop down select */}
+
+                <select className=" outline-none" name="" id="">
+                  <option value="Sale">jan-jun 2024</option>
+                  <option value="Nosale">jul-dec 2024</option>
+                </select>
+              </div>
+
+
             </div>
 
           </div>
