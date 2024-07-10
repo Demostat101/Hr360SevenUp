@@ -1,8 +1,6 @@
 import { Context } from "../DashBoardContext";
-import Graph from "./passedComponents/Graph";
 import MiddleComponent from "./passedComponents/MiddleComponent";
 import TopComponent from "./passedComponents/TopComponent";
-// import { IoIosPeople } from "react-icons/io";
 
 
 
