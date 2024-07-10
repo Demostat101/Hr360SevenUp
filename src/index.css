@@ -7,6 +7,10 @@
     font-family: "Poppins";
 }
 
+body{
+    background-color: #F6F7FA;
+}
+
 .trans{
     transition: width 250ms ease;
 }
@@ -36,6 +40,7 @@ a.active {
 a.active .icon {
     color: #176B87;
 }
+
 
 
 
