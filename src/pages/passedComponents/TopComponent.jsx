@@ -8,8 +8,8 @@ const TopComponent = () => {
     <div
       className={
         open
-          ? "w-full 2xl:h-[228.01px] md:h-full flex 2xl:gap-[27px] md:gap-[50px] md:justify-center"
-          : "w-full 2xl:h-[251.06px] md:h-full flex 2xl:gap-[27px] md:gap-[50px] md:justify-center"
+          ? "w-full 2xl:h-[228.01px] md:h-full flex 2xl:gap-[27px] 2xl:flex-nowrap md:flex-wrap md:gap-[30px] md:justify-center"
+          : "w-full 2xl:h-[251.06px] md:h-full flex 2xl:gap-[27px] 2xl:flex-nowrap md:flex-wrap md:gap-[30px] md:justify-center"
       }
     >
       {/* container holding all cards */}
