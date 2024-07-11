@@ -29,8 +29,8 @@ const TopComponent = () => {
               <div
                 className={
                   open
-                    ? "2xl:w-[100%] relative 2xl:h-[202.44px] md:w-[100%] md:h-[199px] bg-[#FFFFFF] pl-[16px] mt-[25.57px] flex flex-col justify-center"
-                    : " 2xl:w-[100%] bg-[#FFFFFF] relative 2xl:h-[222.9px] md:w-[100%] flex flex-col justify-center md:h-[199px] mt-[28.16px] pl-[16px]"
+                    ? "2xl:w-[100%] rounded-lg relative 2xl:h-[202.44px] shadow-lg md:w-[100%] md:h-[199px] bg-[#FFFFFF] pl-[16px] mt-[25.57px] flex flex-col justify-center"
+                    : " 2xl:w-[100%] rounded-lg bg-[#FFFFFF] shadow-lg relative 2xl:h-[222.9px] md:w-[100%] flex flex-col justify-center md:h-[199px] mt-[28.16px] pl-[16px]"
                 }
               >
                 {/* top small box */}
@@ -46,15 +46,15 @@ const TopComponent = () => {
                     className={
                       (open && total === "69,560") ||
                       (!open && total === "69,560")
-                        ? "2xl:w-[69.26px] flex justify-center place-items-center  rounded-lg 2xl:h-[50.08px] md:w-[60px] md:h-[45px] bg-[#176B87]"
+                        ? "2xl:w-[69.26px] flex justify-center place-items-center shadow-lg  rounded-lg 2xl:h-[50.08px] md:w-[60px] md:h-[45px] bg-[#176B87]"
                         : (open && total === "27") || (!open && total === "27")
-                        ? "2xl:w-[76.26px] flex justify-center place-items-center  rounded-lg 2xl:h-[54.14px] md:w-[70px] md:h-[50px] bg-[#B0AB25]"
+                        ? "2xl:w-[76.26px] flex justify-center place-items-center shadow-lg  rounded-lg 2xl:h-[54.14px] md:w-[70px] md:h-[50px] bg-[#B0AB25]"
                         : (open && total === "11") || (!open && total === "11")
-                        ? "2xl:w-[76.26px] flex justify-center place-items-center  rounded-lg 2xl:h-[54.14px] md:w-[70px] md:h-[50px] bg-[#B1206E]"
-                        : "2xl:w-[76.26px] flex justify-center place-items-center  rounded-lg 2xl:h-[54.14px] md:w-[70px] md:h-[50px] bg-black"
+                        ? "2xl:w-[76.26px] flex justify-center place-items-center shadow-lg  rounded-lg 2xl:h-[54.14px] md:w-[70px] md:h-[50px] bg-[#B1206E]"
+                        : "2xl:w-[76.26px] flex justify-center place-items-center shadow-lg  rounded-lg 2xl:h-[54.14px] md:w-[70px] md:h-[50px] bg-black"
                     }
                   >
-                    {/* {img} */}
+                    
                     <IoIosPeople
                       className={
                         open

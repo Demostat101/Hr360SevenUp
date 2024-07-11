@@ -1,6 +1,6 @@
 import { Context } from "../DashBoardContext";
-import MiddleComponent from "./passedComponents/MiddleComponent";
-import TopComponent from "./passedComponents/TopComponent";
+import MiddleComponent from "./dashBoardComponents/MiddleComponent";
+import TopComponent from "./dashBoardComponents/TopComponent";
 
 
 

@@ -7,27 +7,27 @@ export const salesData = [
         aquafina: 3000
     },
     {
-        month:"feb",
+        month:"Feb",
         sevenUp: 3000,
         aquafina: 1000
     },
     {
-        month:"mar",
+        month:"Mar",
         sevenUp: 2000,
         aquafina: 3000
     },
     {
-        month:"apr",
+        month:"Apr",
         sevenUp: 400,
         aquafina: 700
     },
     {
-        month:"may",
+        month:"May",
         sevenUp: 600,
         aquafina: 1000
     },
     {
-        month:"jun",
+        month:"Jun",
         sevenUp: 2000,
         aquafina: 1000
     },
@@ -37,27 +37,27 @@ export const salesData = [
         aquafina: 500
     },
     {
-        month:"aug",
+        month:"Aug",
         sevenUp: 300,
         aquafina: 340
     },
     {
-        month:"sept",
+        month:"Sept",
         sevenUp: 3000,
         aquafina: 1000
     },
     {
-        month:"oct",
+        month:"Oct",
         sevenUp: 400,
         aquafina: 500
     },
     {
-        month:"nov",
+        month:"Nov",
         sevenUp: 3000,
         aquafina: 1000
     },
     {
-        month:"dec",
+        month:"Dec",
         sevenUp: 400,
         aquafina: 1000
     },

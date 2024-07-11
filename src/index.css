@@ -7,10 +7,6 @@
     font-family: "Poppins";
 }
 
-body{
-    background-color: #F6F7FA;
-}
-
 .trans{
     transition: width 250ms ease;
 }
@@ -22,7 +18,7 @@ body{
 a.active{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    background-color: white;
+    background-color: #F6F7FA;
     color: rgb(95, 79, 79);
 }
 a.active .icons{
