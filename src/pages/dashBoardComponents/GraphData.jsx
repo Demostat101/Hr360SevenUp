@@ -3,62 +3,62 @@
 export const salesData = [
     {
         month:"Jan",
-        sevenUp: 5000,
-        aquafina: 3000
+        "Employees working": 50,
+       "Employees on leave": 30
     },
     {
         month:"Feb",
-        sevenUp: 3000,
-        aquafina: 1000
+        "Employees working": 30,
+        "Employees on leave": 10
     },
     {
         month:"Mar",
-        sevenUp: 2000,
-        aquafina: 3000
+        "Employees working": 20,
+        "Employees on leave": 30
     },
     {
         month:"Apr",
-        sevenUp: 400,
-        aquafina: 700
+        "Employees working": 40,
+        "Employees on leave": 70
     },
     {
         month:"May",
-        sevenUp: 600,
-        aquafina: 1000
+        "Employees working": 60,
+        "Employees on leave": 10
     },
     {
         month:"Jun",
-        sevenUp: 2000,
-        aquafina: 1000
+        "Employees working": 20,
+        "Employees on leave": 10
     },
     {
         month:"Jul",
-        sevenUp: 400,
-        aquafina: 500
+        "Employees working": 40,
+        "Employees on leave": 50
     },
     {
         month:"Aug",
-        sevenUp: 300,
-        aquafina: 340
+        "Employees working": 30,
+        "Employees on leave": 30
     },
     {
         month:"Sept",
-        sevenUp: 3000,
-        aquafina: 1000
+        "Employees working": 30,
+        "Employees on leave": 10
     },
     {
         month:"Oct",
-        sevenUp: 400,
-        aquafina: 500
+        "Employees working": 40,
+        "Employees on leave": 50
     },
     {
         month:"Nov",
-        sevenUp: 3000,
-        aquafina: 1000
+        "Employees working": 30,
+        "Employees on leave": 10
     },
     {
         month:"Dec",
-        sevenUp: 400,
-        aquafina: 1000
+        "Employees working": 40,
+        "Employees on leave": 10
     },
 ]
