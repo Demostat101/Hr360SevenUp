@@ -8,8 +8,8 @@ const TopComponent = () => {
     <div
       className={
         open
-          ? "w-full 2xl:h-[228.01px] md:h-full flex 2xl:gap-[27px] 2xl:flex-nowrap md:flex-wrap md:gap-[30px] md:justify-center"
-          : "w-full 2xl:h-[251.06px] md:h-full flex 2xl:gap-[27px] 2xl:flex-nowrap md:flex-wrap md:gap-[30px] md:justify-center"
+          ? "w-full 2xl:h-[228.01px]  md:place-items-center md:h-full flex 2xl:gap-[27px] 2xl:flex-nowrap md:flex-wrap md:gap-[30px] md:justify-center"
+          : "w-full 2xl:h-[251.06px] md:h-full flex 2xl:gap-[27px]  md:place-items-center 2xl:flex-nowrap md:flex-wrap md:gap-[30px] md:justify-center"
       }
     >
       {/* container holding all cards */}
@@ -20,8 +20,8 @@ const TopComponent = () => {
             <div
               className={
                 open
-                  ? "2xl:w-[358px] md:w-[250px] 2xl:h-[228.01px] md:h-[228.01px]"
-                  : "2xl:w-[394.18px] md:w-[300px] 2xl:h-[251.06px] md:h-[228.01px]"
+                  ? "2xl:w-[358px] md:w-[250px] 2xl:h-[228.01px] md:h-[228.01px] "
+                  : "2xl:w-[394.18px] md:w-[300px] 2xl:h-[251.06px] md:h-[228.01px] "
               }
             >
               {/* container inside single container */}
