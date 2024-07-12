@@ -13,10 +13,10 @@ const MiddleComponent = () => {
 
     const {open} = Context()
   return (
-    <main className={open ? "2xl:w-[1127px] 2xl:flex-nowrap md:flex-wrap 2xl:h-[290.71px] flex 2xl:gap-[30px] md:w-[100%] md:h-[250px] md:gap-[30px] md:justify-center" : "2xl:w-[1240.9px] 2xl:h-[325.59px] flex 2xl:gap-[33.03px] md:w-[100%] 2xl:flex-nowrap md:flex-wrap md:h-[280px] md:gap-[40px] md:justify-center"}>
+    <main className={open ? "2xl:w-[1127px] 2xl:flex-nowrap md:flex-wrap 2xl:h-[290.71px] flex 2xl:gap-[30px] md:w-[100%] md:h-[250px] md:justify-between" : "2xl:w-[1240.9px] 2xl:h-[325.59px] flex 2xl:gap-[33.03px] md:w-[100%] 2xl:flex-nowrap md:flex-wrap md:h-[280px] md:justify-between"}>
 
       {/* Graph container / left side container */}
-        <div className={open ? "2xl:w-[739px] flex flex-col shadow-lg rounded-lg bg-[#FFFFFF] gap-[15px] 2xl:h-[295px] md:w-[500px] md:h-[250px]" : "2xl:w-[813.69px] shadow-lg rounded-lg bg-[#FFFFFF] gap-[17px] flex flex-col 2xl:h-[324.81px] md:w-[550px] md:h-[275px]"} >
+        <div className={open ? "2xl:w-[739px] flex flex-col shadow-lg rounded-lg bg-[#FFFFFF] gap-[15px] 2xl:h-[295px] md:w-[628px] md:h-[250px]" : "2xl:w-[813.69px] shadow-lg rounded-lg bg-[#FFFFFF] gap-[17px] flex flex-col 2xl:h-[324.81px] md:w-[685px] md:h-[275px]"} >
           {/* Top component inside graph with drop downs */}
           <div className={open ? "2xl:w-[698px] 2xl:h-[42px] 2xl:gap-[154px] flex place-items-center md:w-[100%] md:h-[30px] md:justify-between" : "2xl:w-[768.67px] 2xl:h-[45.82px] 2xl:gap-[169.56px] flex place-items-center md:w-[95%] md:h-[30px] md:justify-between"}>
             {/* graph top content */}
@@ -61,7 +61,7 @@ const MiddleComponent = () => {
 
         {/* Calender container */}
 
-        <div className={open ? "2xl:w-[358px] bg-[#FFFFFF] rounded-lg shadow-lg 2xl:h-[295.71px] md:w-[300px] md:h-[100%]" : "2xl:w-[394.18px] bg-[#FFFFFF] 2xl:h-[325.59px] rounded-lg md:w-[330px] shadow-lg md:h-[100%]"}>
+        <div className={open ? "2xl:w-[358px] bg-[#FFFFFF] rounded-lg shadow-lg 2xl:h-[295.71px] md:w-[320px] md:h-[100%]" : "2xl:w-[394.18px] bg-[#FFFFFF] 2xl:h-[325.59px] rounded-lg md:w-[370px] shadow-lg md:h-[100%]"}>
           <DashCalender/>
         </div>
       

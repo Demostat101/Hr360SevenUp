@@ -7,7 +7,7 @@ const Box2 = () => {
 
     const {open} = Context()
   return (
-    <div className={open ? "2xl:w-[349.55px] pb-[15px] flex flex-col justify-between 2xl:h-[311.1px] bg-[#FFFFFF] rounded-lg shadow-md md:w-[300px] md:h-[300px]" :"2xl:w-[384.88px] flex flex-col justify-between rounded-lg shadow-md 2xl:h-[342.55px] bg-[#FFFFFF] pb-[15px] md:w-[310px] md:h-[300px]"}>
+    <div className={open ? "2xl:w-[349.55px] pb-[15px] flex flex-col justify-between 2xl:h-[311.1px] bg-[#FFFFFF] rounded-lg shadow-lg md:w-[300px] md:h-[300px]" :"2xl:w-[384.88px] flex flex-col justify-between rounded-lg shadow-lg 2xl:h-[342.55px] bg-[#FFFFFF] pb-[15px] md:w-[310px] md:h-[300px]"}>
 
       {/* top container */}
       <div className={open ? "2xl:w-[349px] border-[1.17px]  border-[#ECEEF6] 2xl:h-[55px] flex place-items-center justify-between 2xl:gap-[10px] pl-[20px] pr-[20px] md:w-[100%] md:h-[35px] md:gap-[7px]" : "2xl:w-[384.53px] 2xl:h-[60.44px] flex place-items-center justify-between 2xl:gap-[11.01px] pr-[20px] pl-[20px] md:w-[100%] border-[1.18px] border-[#ECEEF6] md:h-[38px] md:gap-[8px] "} >

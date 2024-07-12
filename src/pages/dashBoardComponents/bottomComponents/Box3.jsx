@@ -8,8 +8,8 @@ const Box3 = () => {
     <div
       className={
         open
-          ? " 2xl:w-[386.26px] bg-white rounded-md shadow-md 2xl:h-[100%] flex flex-col gap-[15px] md:w-[350px] md:h-[300px] "
-          : " 2xl:w-[425.3px] 2xl:h-[100%] bg-white md:w-[370px] shadow-md rounded-md flex flex-col gap-[15px] md:h-[300px]  "
+          ? " 2xl:w-[386.26px] bg-white rounded-lg shadow-lg 2xl:h-[100%] flex flex-col gap-[15px] md:w-[350px] md:h-[300px] "
+          : " 2xl:w-[425.3px] 2xl:h-[100%] bg-white md:w-[370px] shadow-lg rounded-lg flex flex-col gap-[20px] md:h-[300px]  "
       }
     >
       {/* top bar */}
