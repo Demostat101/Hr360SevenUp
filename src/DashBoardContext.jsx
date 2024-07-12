@@ -1,5 +1,4 @@
-
-import { createContext, useContext, useState} from "react";
+import { createContext, useContext, useState } from "react";
 import useLocalStorage from "use-local-storage";
 
 export const dashBoardContext = createContext();
@@ -9,22 +8,17 @@ export const Context = () => {
 };
 
 export const ContextProvider = ({ children }) => {
+  const [open, setOpen] = useLocalStorage(false);
+  const [name, setName] = useState("Esther");
 
-  const [open, setOpen] = useLocalStorage(false)
-  const [name, setName] = useState("Esther")
-
-  const handleOpenBar = ()=> {
+  const handleOpenBar = () => {
     const close = !open;
-    setOpen(close)
-  }
-
+    setOpen(close);
+  };
 
   return (
-    <dashBoardContext.Provider
-      value={{handleOpenBar,open, name }}
-    >
+    <dashBoardContext.Provider value={{ handleOpenBar, open, name }}>
       {children}
     </dashBoardContext.Provider>
   );
 };
-

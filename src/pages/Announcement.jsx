@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Announcement = () => {
-  return (
-    <div>
-      ANNOUNCEMENT
-    </div>
-  )
-}
+  return <div>ANNOUNCEMENT</div>;
+};
 
-export default Announcement
+export default Announcement;

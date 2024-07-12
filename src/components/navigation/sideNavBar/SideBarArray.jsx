@@ -7,7 +7,7 @@ import { BsColumnsGap } from "react-icons/bs";
 export const Paths = [
   {
     to: "/",
-    icons: [< BsColumnsGap size={40} />, < BsColumnsGap size={23} />],
+    icons: [<BsColumnsGap size={40} />, <BsColumnsGap size={23} />],
 
     label: "Dashboard",
   },

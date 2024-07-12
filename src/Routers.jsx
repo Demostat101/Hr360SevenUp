@@ -7,43 +7,41 @@ import AddEmployee from "./pages/AddEmployee";
 import Analytics from "./pages/Analytics";
 import Announcement from "./pages/Announcement";
 
-
-
 const Routers = createBrowserRouter([
-    {
-        path:'/',
-        element: <MainLayout/>,
+  {
+    path: "/",
+    element: <MainLayout />,
 
-        children: [
-            {
-                index:true,
-                element:<DashBoard/>
-            },
+    children: [
+      {
+        index: true,
+        element: <DashBoard />,
+      },
 
-            {
-                path:'/employee',
-                element:<Employee/>
-            },
+      {
+        path: "/employee",
+        element: <Employee />,
+      },
 
-            {
-                path:'/add-employee',
-                element:<AddEmployee/>
-            },
-            {
-                path:'/analytics',
-                element:<Analytics/>
-            },
-            {
-                path:'/announcement',
-                element:<Announcement/>
-            },
+      {
+        path: "/add-employee",
+        element: <AddEmployee />,
+      },
+      {
+        path: "/analytics",
+        element: <Analytics />,
+      },
+      {
+        path: "/announcement",
+        element: <Announcement />,
+      },
 
-            {
-                path:'/*',
-                element:<Error/>
-            }
-        ]
-    }
-])
+      {
+        path: "/*",
+        element: <Error />,
+      },
+    ],
+  },
+]);
 
-export default Routers
+export default Routers;

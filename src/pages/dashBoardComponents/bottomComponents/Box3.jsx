@@ -76,38 +76,83 @@ const Box3 = () => {
             Anniversary
           </div>
         </div>
-            
       </div>
 
-            {/* images and date */}
+      {/* images and date */}
 
-      <div className="flex flex-col w-full place-items-center gap-[20px]">
-              {/* single image card */}
-               {
-                Box3Data.map(({img,department,name,date},index)=>{
-                  return  <div key={index} className={open ? " 2xl:w-[357.1px] 2xl:h-[50.1px] flex justify-between place-items-center md:w-[320px] md:h-[45px] " : " 2xl:w-[392.63px] 2xl:h-[55.17px] md:w-[350px] flex justify-between place-items-center md:h-[50px] "} >
-                  {/* picture and name div */}
+      <div className="flex flex-col w-full place-items-center gap-[20px] md:pl-[15px] md:pr-[15px]">
+        {/* single image card */}
+        {Box3Data.map(({ img, department, name, date }, index) => {
+          return (
+            <div
+              key={index}
+              className={
+                open
+                  ? " 2xl:w-[357.1px] 2xl:h-[50.1px] flex justify-between place-items-center md:w-[320px] md:h-[45px] "
+                  : " 2xl:w-[392.63px] 2xl:h-[55.17px] md:w-[350px] flex justify-between place-items-center md:h-[50px] "
+              }
+            >
+              {/* picture and name div */}
 
-                  <div className={open ? " 2xl:w-[175.1px] 2xl:h-[50.1px] place-items-center flex 2xl:gap-[15px] md:w-[170px] md:h-[45px] md:gap-[10px] " : " 2xl:w-[192.68px] place-items-center flex 2xl:h-[55.17px] 2xl:gap-[16.52px] md:w-[185px] md:h-[50px] md:gap-[11px] "}>
-                    <img src={img} alt="" className={open ? "2xl:w-[50.1px] 2xl:h-[50.1px] 2xl:rounded-full md:w-[45.1px] md:h-[45.1px] md:rounded-full " : "2xl:w-[55.17px] 2xl:h-[55.17px] 2xl:rounded-full md:w-[50.17px] md:h-[50.17px] md:rounded-full "} />
-                    {/* name container */}
+              <div
+                className={
+                  open
+                    ? " 2xl:w-[175.1px] 2xl:h-[50.1px] place-items-center flex 2xl:gap-[15px] md:w-[170px] md:h-[45px] md:gap-[10px] "
+                    : " 2xl:w-[192.68px] place-items-center flex 2xl:h-[55.17px] 2xl:gap-[16.52px] md:w-[185px] md:h-[50px] md:gap-[11px] "
+                }
+              >
+                <img
+                  src={img}
+                  alt=""
+                  className={
+                    open
+                      ? "2xl:w-[50.1px] 2xl:h-[50.1px] 2xl:rounded-full md:w-[45.1px] md:h-[45.1px] md:rounded-full "
+                      : "2xl:w-[55.17px] 2xl:h-[55.17px] 2xl:rounded-full md:w-[50.17px] md:h-[50.17px] md:rounded-full "
+                  }
+                />
+                {/* name container */}
 
-                    <div className={open ? " 2xl:w-[110px] 2xl:h-[39px] flex flex-col md:w-[100px] md:h-[35px] " : " 2xl:w-[121px] 2xl:h-[43px] md:w-[111px] flex flex-col md:h-[39px] "}>
-                      <span className={open ? " 2xl:font-[500] text-nowrap 2xl:text-[14px] 2xl:leading-[21px] md:font-[500] md:text-[12px] md:leading-[18px] " : " 2xl:font-[500] text-nowrap 2xl:text-[15.41px] 2xl:leading-[23.12px] md:font-[500] md:text-[13px] md:leading-[20px] "}>{name}</span>
-                      <small className={open ? " 2xl:font-[400] 2xl:text-[12px] 2xl:leading-[18px] md:font-[400] md:text-[10px] md:leading-[15px] " : " 2xl:font-[400] 2xl:text-[13.21px] 2xl:leading-[19.82px] md:font-[400] md:text-[11px] md:leading-[18px] "}>{department}</small>
-                    </div>
-                  </div>
-
-                    <div className={open ? " 2xl:font-[400] 2xl:text-[14px] 2xl:leading-[21px] md:font-[400] md:text-[12px] md:leading-[18px] " : " 2xl:font-[400] 2xl:text-[15.41px] 2xl:leading-[23.12px] md:font-[400] md:text-[13px] md:leading-[20px] "}>{date}</div>
-
+                <div
+                  className={
+                    open
+                      ? " 2xl:w-[110px] 2xl:h-[39px] flex flex-col md:w-[100px] md:h-[35px] "
+                      : " 2xl:w-[121px] 2xl:h-[43px] md:w-[111px] flex flex-col md:h-[39px] "
+                  }
+                >
+                  <span
+                    className={
+                      open
+                        ? " 2xl:font-[500] text-nowrap 2xl:text-[14px] 2xl:leading-[21px] md:font-[500] md:text-[12px] md:leading-[18px] "
+                        : " 2xl:font-[500] text-nowrap 2xl:text-[15.41px] 2xl:leading-[23.12px] md:font-[500] md:text-[13px] md:leading-[20px] "
+                    }
+                  >
+                    {name}
+                  </span>
+                  <small
+                    className={
+                      open
+                        ? " 2xl:font-[400] 2xl:text-[12px] 2xl:leading-[18px] md:font-[400] md:text-[10px] md:leading-[15px] "
+                        : " 2xl:font-[400] 2xl:text-[13.21px] 2xl:leading-[19.82px] md:font-[400] md:text-[11px] md:leading-[18px] "
+                    }
+                  >
+                    {department}
+                  </small>
                 </div>
-                })
-               }
+              </div>
+
+              <div
+                className={
+                  open
+                    ? " 2xl:font-[400] 2xl:text-[14px] 2xl:leading-[21px] md:font-[400] md:text-[12px] md:leading-[18px] "
+                    : " 2xl:font-[400] 2xl:text-[15.41px] 2xl:leading-[23.12px] md:font-[400] md:text-[13px] md:leading-[20px] "
+                }
+              >
+                {date}
+              </div>
             </div>
-            
-
-
-
+          );
+        })}
+      </div>
     </div>
   );
 };

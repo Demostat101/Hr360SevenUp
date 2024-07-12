@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const Error = () => {
   return (
-    <div>
-      PAGE NOT FOUND!
-    </div>
-  )
-}
+    <div className="text-[100px] font-[900] mt-[20%] ml-[20%]">ERROR 404</div>
+  );
+};
 
-export default Error
+export default Error;

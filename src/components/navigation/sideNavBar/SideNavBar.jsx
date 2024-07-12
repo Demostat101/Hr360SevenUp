@@ -1,11 +1,10 @@
 import { NavLink } from "react-router-dom";
 import { Paths } from "./SideBarArray";
 import SevenUpLogo from "../../../assets/SevenUpLogo.jfif";
-import { Context } from '../../../DashBoardContext'
-
+import { Context } from "../../../DashBoardContext";
 
 const SideNavBar = () => {
-  const {open} = Context();
+  const { open } = Context();
   return (
     <nav
       className={
@@ -46,8 +45,8 @@ const SideNavBar = () => {
               key={index}
             >
               <li
-                className={ 
-                    !open
+                className={
+                  !open
                     ? "w-[80px]  h-[80px] flex flex-col justify-center place-items-center"
                     : "w-[221px] mb-2 flex h-[50px] place-items-center gap-3 text-md font-bold pl-3 pt-[5px] justify-left"
                 }

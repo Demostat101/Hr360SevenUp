@@ -54,7 +54,6 @@ const TopComponent = () => {
                         : "2xl:w-[76.26px] flex justify-center place-items-center shadow-lg  rounded-lg 2xl:h-[54.14px] md:w-[70px] md:h-[50px] bg-black"
                     }
                   >
-                    
                     <IoIosPeople
                       className={
                         open
