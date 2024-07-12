@@ -5,7 +5,7 @@ import TopNavBar from "../components/navigation/topNavBar/TopNavBar";
 
 const MainLayout = () => {
   return (
-    <div className="flex flex-col place-items-center w-full h-screen">
+    <div className="flex flex-col place-items-center w-full h-screen overflow-x-hidden">
       <div className="2xl:w-[1440px] md:w-[1280px] flex w-full min-h-screen bg-[#F6F7FA] relative">
         <SideNavBar />
         <div className="w-full overflow-auto overflow-x-hidden">
