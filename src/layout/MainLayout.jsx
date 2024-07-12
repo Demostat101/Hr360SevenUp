@@ -9,7 +9,7 @@ const MainLayout = () => {
     <div className='flex flex-col place-items-center w-full min-h-screen'>
       <div className='2xl:w-[1440px] flex w-full min-h-screen bg-[#F6F7FA]'>
         <SideNavBar/>
-        <div className='w-full'>
+        <div className='w-full relative'>
         <TopNavBar/>
         <Outlet/>
         </div>
